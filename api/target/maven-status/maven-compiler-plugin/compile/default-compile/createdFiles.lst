@@ -1,0 +1,6 @@
+org/openmrs/module/oralhealthmodule/OralHealthActivator.class
+org/openmrs/module/oralhealthmodule/api/db/OralHealthDAO.class
+org/openmrs/module/oralhealthmodule/api/OralHealthService.class
+org/openmrs/module/oralhealthmodule/api/impl/OralHealthServiceImpl.class
+org/openmrs/module/oralhealthmodule/OralHealth.class
+org/openmrs/module/oralhealthmodule/api/db/hibernate/HibernateOralHealthDAO.class

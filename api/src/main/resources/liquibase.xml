@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+                  http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+
+    <!--
+        See 
+        for a list of supported elements and attributes
+    -->
+	<changeSet id="oralhealth_02122016_1" author="franzi">
+		<sql>
+			drop table if exists oralhealthmodule_oralhealth;
+		</sql>
+	</changeSet>
+	<changeSet id="oralhealth_02122016_2" author="franzi">
+		<preConditions onFail="MARK_RAN">
+			<not><tableExists tableName="oralhealthmodule_oralhealth"/></not>
+		</preConditions>
+		<comment>
+			Creating the oralhealthmodule_oralhealth table
+		</comment>
+		<createTable tableName="oralhealthmodule_oralhealth">
+			<column name="oralHealthId" type="int" autoIncrement="true">
+				<constraints primaryKey="true" nullable="false"/>
+			</column>
+	            	<column name="patientName" type="varchar(255)"></column>
+	            	<column name="patientId" type="int"></column>
+            		<column name="doctorName" type="varchar(255)"></column>
+            		<column name="patientBirthdate" type="date"></column>
+            		<column name="examinationDate" type="date"></column>
+			<column name="placeOfResidence" type="varchar(255)" />
+			<column name="lips" type="varchar(255)" />
+			<column name="gum" type="varchar(255)" />
+			<column name="knownDiseases" type="varchar(255)" />
+			<column name="hardPalate" type="varchar(255)" />
+			<column name="tonsil" type="varchar(255)" />
+			<column name="drugs" type="varchar(255)" />
+			<column name="softPalate" type="varchar(255)" />
+			<column name="tongue" type="varchar(255)" />
+			<column name="uvula" type="varchar(255)" />
+			<column name="otherNotices" type="varchar(255)" />
+			<column name="birthdateText" type="varchar(255)" />
+			<column name="patientNameText" type="varchar(255)" />
+			<column name="smoking" type="varchar(255)" />
+			<column name="foetorExOre" type="varchar(255)" />
+			<column name="psi_18_14" type="int" />
+			<column name="psi_13_23" type="int" />
+			<column name="psi_24_28" type="int" />
+			<column name="psi_48_44" type="int" />
+			<column name="psi_43_33" type="int" />
+			<column name="psi_34_48" type="int" />
+			<column name="treatment_18" type="varchar(6)" />
+			<column name="treatment_17" type="varchar(6)" />
+			<column name="treatment_16" type="varchar(6)" />
+			<column name="treatment_15" type="varchar(6)" />
+			<column name="treatment_14" type="varchar(6)" />
+			<column name="treatment_13" type="varchar(6)" />
+			<column name="treatment_12" type="varchar(6)" />
+			<column name="treatment_11" type="varchar(6)" />
+			<column name="treatment_21" type="varchar(6)" />
+			<column name="treatment_22" type="varchar(6)" />
+			<column name="treatment_23" type="varchar(6)" />
+			<column name="treatment_24" type="varchar(6)" />
+			<column name="treatment_25" type="varchar(6)" />
+			<column name="treatment_26" type="varchar(6)" />
+			<column name="treatment_27" type="varchar(6)" />
+			<column name="treatment_28" type="varchar(6)" />
+			<column name="treatment_48" type="varchar(6)" />
+			<column name="treatment_47" type="varchar(6)" />
+			<column name="treatment_46" type="varchar(6)" />
+			<column name="treatment_45" type="varchar(6)" />
+			<column name="treatment_44" type="varchar(6)" />
+			<column name="treatment_43" type="varchar(6)" />
+			<column name="treatment_42" type="varchar(6)" />
+			<column name="treatment_41" type="varchar(6)" />
+			<column name="treatment_31" type="varchar(6)" />
+			<column name="treatment_32" type="varchar(6)" />
+			<column name="treatment_33" type="varchar(6)" />
+			<column name="treatment_34" type="varchar(6)" />
+			<column name="treatment_35" type="varchar(6)" />
+			<column name="treatment_36" type="varchar(6)" />
+			<column name="treatment_37" type="varchar(6)" />
+			<column name="treatment_38" type="varchar(6)" />
+			<column name="status_18" type="varchar(6)" />
+			<column name="status_17" type="varchar(6)" />
+			<column name="status_16" type="varchar(6)" />
+			<column name="status_14" type="varchar(6)" />
+			<column name="status_13" type="varchar(6)" />
+			<column name="status_12" type="varchar(6)" />
+			<column name="status_11" type="varchar(6)" />
+			<column name="status_21" type="varchar(6)" />
+			<column name="status_22" type="varchar(6)" />
+			<column name="status_23" type="varchar(6)" />
+			<column name="status_24" type="varchar(6)" />
+			<column name="status_25" type="varchar(6)" />
+			<column name="status_26" type="varchar(6)" />
+			<column name="status_27" type="varchar(6)" />
+			<column name="status_28" type="varchar(6)" />
+			<column name="status_48" type="varchar(6)" />
+			<column name="status_47" type="varchar(6)" />
+			<column name="status_46" type="varchar(6)" />
+			<column name="status_45" type="varchar(6)" />
+			<column name="status_44" type="varchar(6)" />
+			<column name="status_43" type="varchar(6)" />
+			<column name="status_42" type="varchar(6)" />
+			<column name="status_41" type="varchar(6)" />
+			<column name="status_31" type="varchar(6)" />
+			<column name="status_32" type="varchar(6)" />
+			<column name="status_33" type="varchar(6)" />
+			<column name="status_34" type="varchar(6)" />
+			<column name="status_35" type="varchar(6)" />
+			<column name="status_36" type="varchar(6)" />
+			<column name="status_37" type="varchar(6)" />
+			<column name="status_38" type="varchar(6)" />
+			<column name="deciduos_55" type="boolean" />
+			<column name="deciduos_54" type="boolean" />
+			<column name="deciduos_53" type="boolean" />
+			<column name="deciduos_52" type="boolean" />
+			<column name="deciduos_51" type="boolean" />
+			<column name="deciduos_65" type="boolean" />
+			<column name="deciduos_64" type="boolean" />
+			<column name="deciduos_63" type="boolean" />
+			<column name="deciduos_62" type="boolean" />
+			<column name="deciduos_61" type="boolean" />
+			<column name="deciduos_75" type="boolean" />
+			<column name="deciduos_74" type="boolean" />
+			<column name="deciduos_73" type="boolean" />
+			<column name="deciduos_72" type="boolean" />
+			<column name="deciduos_71" type="boolean" />
+			<column name="deciduos_85" type="boolean" />
+			<column name="deciduos_84" type="boolean" />
+			<column name="deciduos_83" type="boolean" />
+			<column name="deciduos_82" type="boolean" />
+			<column name="deciduos_81" type="boolean" />
+			<column name="dmft" type="FLOAT" />
+			<column name="treatSumExtraction" type="int" />
+			<column name="treatSumFilling" type="int" />
+			<column name="treatSumRTC" type="int" />
+		</createTable>
+    </changeSet>   
+</databaseChangeLog>

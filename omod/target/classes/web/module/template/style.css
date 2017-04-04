@@ -1,0 +1,65 @@
+<style>
+.left{
+	float:left;
+	width:32%;
+}
+.middle{
+	float:left;
+	width:32%;
+}
+.right{
+	float:left;
+	width:31%;
+}
+.header{
+	float:left;
+	width:100%;
+}
+.second_left{
+	float:left;
+	width:32%;
+}
+.second_middle{
+	float:left;
+	width:32%;
+}
+.second_right{
+	float:left;
+	width:31%;
+}
+.dental{
+	float:left;
+	width:100%;
+}
+.submit{
+	float:left;
+	width:100%;
+}
+.delete{
+	float:left;
+	width:100%;
+}
+.oh_header{
+	float:left;
+	width:100%;
+}
+IMG.teeth {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
+.box {width:auto;}
+.boxHeader {width:auto;}
+.summary_left{
+	float:left;
+	width:50%;
+}
+.summary_right{
+	float:left;
+	width:50%;
+}
+.summary_header{
+	float:left;
+	width:100%;
+}
+</style>

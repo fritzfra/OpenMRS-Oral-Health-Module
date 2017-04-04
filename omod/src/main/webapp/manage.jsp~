@@ -1,0 +1,32 @@
+<%@ include file="/WEB-INF/template/include.jsp"%>
+<%@ include file="/WEB-INF/template/header.jsp"%>
+
+<%@ include file="template/localHeader.jsp"%>
+
+<openmrs:htmlInclude file="/scripts/calendar/calendar.js" />
+<html>
+ <head>
+</head>
+<body>
+	<p><b>Module Information</b></p>
+	<p>This module is for oral health assessment. There are four parts to fill out for the examintaion of our partient: </p>
+	<p>1.) Global information like patient name, date of birth, etc.</p>
+	<p>2.) The oral mucosa, where you can record your observations and treatments for:</p>
+	<ul type="square">
+		<li>lips</li>
+		<li>gum</li>
+		<li>uvula</li>
+		<li>soft palate</li>
+		<li>hard palate</li>
+		<li>tonsil</li>
+		<li>tongue</li>
+		<li>other notices</li>
+	</ul>	
+	<p>3.) Information like known disease, drugs, etc.</p>
+	<p>4.) The dental status, where you have a shema for teeth and can record the status, treatment and psi for each tooth.</p>
+	<br/>
+	<p>You can create a new form, save, edit and print forms. Oral health is very important for preventive medical care, because this information can minimize the risk of other illness.</p>
+</body>
+</html>
+
+<%@ include file="/WEB-INF/template/footer.jsp"%>

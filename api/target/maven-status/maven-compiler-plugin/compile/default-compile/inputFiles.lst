@@ -1,0 +1,6 @@
+/home/praktikant/Franzi/oralhealthmodule/api/src/main/java/org/openmrs/module/oralhealthmodule/api/OralHealthService.java
+/home/praktikant/Franzi/oralhealthmodule/api/src/main/java/org/openmrs/module/oralhealthmodule/api/db/OralHealthDAO.java
+/home/praktikant/Franzi/oralhealthmodule/api/src/main/java/org/openmrs/module/oralhealthmodule/OralHealthActivator.java
+/home/praktikant/Franzi/oralhealthmodule/api/src/main/java/org/openmrs/module/oralhealthmodule/api/db/hibernate/HibernateOralHealthDAO.java
+/home/praktikant/Franzi/oralhealthmodule/api/src/main/java/org/openmrs/module/oralhealthmodule/OralHealth.java
+/home/praktikant/Franzi/oralhealthmodule/api/src/main/java/org/openmrs/module/oralhealthmodule/api/impl/OralHealthServiceImpl.java

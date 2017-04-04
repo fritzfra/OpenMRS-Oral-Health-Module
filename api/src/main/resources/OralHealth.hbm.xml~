@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="org.openmrs.module.oralhealthmodule">
+	<class name="OralHealth"
+		table="${project.parent.artifactId}_oralhealth">
+		<id name="oralHealthId" type="int" column="oralHealthId" unsaved-value="0">
+			<generator class="native" />
+		</id>
+		<discriminator column="oralHealthId" insert="false" />	
+		<property name="patientName" type="java.lang.String" column="patientName"
+			length="255"/>
+		<property name="patientId" type="int" column="patientId" length="38"/>
+		<property name="doctorName" type="java.lang.String" column="doctorName"
+			length="255"/>
+		<property name="patientBirthdate" type="java.util.Date" column="patientBirthdate"/>
+		<property name="examinationDate" type="java.util.Date" column="examinationDate"/>
+		<property name="placeOfResidence" type="java.lang.String" column="placeOfResidence"
+			length="255"/>
+		<property name="lips" type="java.lang.String" column="lips"
+			length="255"/>
+		<property name="gum" type="java.lang.String" column="gum"
+			length="255"/>
+		<property name="knownDiseases" type="java.lang.String" column="knownDiseases"
+			length="255"/>
+		<property name="hardPalate" type="java.lang.String" column="hardPalate"
+			length="255"/>
+		<property name="tonsil" type="java.lang.String" column="tonsil"
+			length="255"/>
+		<property name="drugs" type="java.lang.String" column="drugs"
+			length="255"/>
+		<property name="softPalate" type="java.lang.String" column="softPalate"
+			length="255"/>
+		<property name="tongue" type="java.lang.String" column="tongue"
+			length="255"/>
+		<property name="uvula" type="java.lang.String" column="uvula"
+			length="255"/>
+		<property name="otherNotices" type="java.lang.String" column="otherNotices"
+			length="255"/>
+		<property name="birthdateText" type="java.lang.String" column="birthdateText"
+			length="255"/>
+		<property name="smoking" type="java.lang.String" column="smoking"/>
+		<property name="psi_18_14" type="int" column="psi_18_14"/>
+		<property name="psi_13_23" type="int" column="psi_13_23"/>
+		<property name="psi_24_28" type="int" column="psi_24_28"/>
+		<property name="psi_48_44" type="int" column="psi_48_44"/>
+		<property name="psi_43_33" type="int" column="psi_43_33"/>
+		<property name="psi_34_48" type="int" column="psi_34_48"/>
+		<property name="treatment_18" type="java.lang.String" column="treatment_18"/>
+		<property name="treatment_17" type="java.lang.String" column="treatment_17"/>
+		<property name="treatment_16" type="java.lang.String" column="treatment_16"/>
+		<property name="treatment_15" type="java.lang.String" column="treatment_15"/>
+		<property name="treatment_14" type="java.lang.String" column="treatment_14"/>
+		<property name="treatment_13" type="java.lang.String" column="treatment_13"/>
+		<property name="treatment_12" type="java.lang.String" column="treatment_12"/>
+		<property name="treatment_11" type="java.lang.String" column="treatment_11"/>
+		<property name="treatment_21" type="java.lang.String" column="treatment_21"/>
+		<property name="treatment_22" type="java.lang.String" column="treatment_22"/>
+		<property name="treatment_23" type="java.lang.String" column="treatment_23"/>
+		<property name="treatment_24" type="java.lang.String" column="treatment_24"/>
+		<property name="treatment_25" type="java.lang.String" column="treatment_25"/>
+		<property name="treatment_26" type="java.lang.String" column="treatment_26"/>
+		<property name="treatment_27" type="java.lang.String" column="treatment_27"/>
+		<property name="treatment_28" type="java.lang.String" column="treatment_28"/>
+		<property name="treatment_48" type="java.lang.String" column="treatment_48"/>
+		<property name="treatment_47" type="java.lang.String" column="treatment_47"/>
+		<property name="treatment_46" type="java.lang.String" column="treatment_46"/>
+		<property name="treatment_45" type="java.lang.String" column="treatment_45"/>
+		<property name="treatment_44" type="java.lang.String" column="treatment_44"/>
+		<property name="treatment_43" type="java.lang.String" column="treatment_43"/>
+		<property name="treatment_42" type="java.lang.String" column="treatment_42"/>
+		<property name="treatment_41" type="java.lang.String" column="treatment_41"/>
+		<property name="treatment_31" type="java.lang.String" column="treatment_31"/>
+		<property name="treatment_32" type="java.lang.String" column="treatment_32"/>
+		<property name="treatment_33" type="java.lang.String" column="treatment_33"/>
+		<property name="treatment_34" type="java.lang.String" column="treatment_34"/>
+		<property name="treatment_35" type="java.lang.String" column="treatment_35"/>
+		<property name="treatment_36" type="java.lang.String" column="treatment_36"/>
+		<property name="treatment_37" type="java.lang.String" column="treatment_37"/>
+		<property name="treatment_38" type="java.lang.String" column="treatment_38"/>
+		<property name="status_18" type="java.lang.String" column="status_18"/>
+		<property name="status_17" type="java.lang.String" column="status_17"/>
+		<property name="status_16" type="java.lang.String" column="status_16"/>
+		<property name="status_14" type="java.lang.String" column="status_14"/>
+		<property name="status_13" type="java.lang.String" column="status_13"/>
+		<property name="status_12" type="java.lang.String" column="status_12"/>
+		<property name="status_11" type="java.lang.String" column="status_11"/>
+		<property name="status_21" type="java.lang.String" column="status_21"/>
+		<property name="status_22" type="java.lang.String" column="status_22"/>
+		<property name="status_23" type="java.lang.String" column="status_23"/>
+		<property name="status_24" type="java.lang.String" column="status_24"/>
+		<property name="status_25" type="java.lang.String" column="status_25"/>
+		<property name="status_26" type="java.lang.String" column="status_26"/>
+		<property name="status_27" type="java.lang.String" column="status_27"/>
+		<property name="status_28" type="java.lang.String" column="status_28"/>
+		<property name="status_48" type="java.lang.String" column="status_48"/>
+		<property name="status_47" type="java.lang.String" column="status_47"/>
+		<property name="status_46" type="java.lang.String" column="status_46"/>
+		<property name="status_45" type="java.lang.String" column="status_45"/>
+		<property name="status_44" type="java.lang.String" column="status_44"/>
+		<property name="status_43" type="java.lang.String" column="status_43"/>
+		<property name="status_42" type="java.lang.String" column="status_42"/>
+		<property name="status_41" type="java.lang.String" column="status_41"/>
+		<property name="status_31" type="java.lang.String" column="status_31"/>
+		<property name="status_32" type="java.lang.String" column="status_32"/>
+		<property name="status_33" type="java.lang.String" column="status_33"/>
+		<property name="status_34" type="java.lang.String" column="status_34"/>
+		<property name="status_35" type="java.lang.String" column="status_35"/>
+		<property name="status_36" type="java.lang.String" column="status_36"/>
+		<property name="status_37" type="java.lang.String" column="status_37"/>
+		<property name="status_38" type="java.lang.String" column="status_38"/>
+		<property name="deciduos_55" type="boolean" column="deciduos_55"/>
+		<property name="deciduos_54" type="boolean" column="deciduos_54"/>
+		<property name="deciduos_53" type="boolean" column="deciduos_53"/>
+		<property name="deciduos_52" type="boolean" column="deciduos_52"/>
+		<property name="deciduos_51" type="boolean" column="deciduos_51"/>
+		<property name="deciduos_65" type="boolean" column="deciduos_65"/>
+		<property name="deciduos_64" type="boolean" column="deciduos_64"/>
+		<property name="deciduos_63" type="boolean" column="deciduos_63"/>
+		<property name="deciduos_62" type="boolean" column="deciduos_62"/>
+		<property name="deciduos_61" type="boolean" column="deciduos_61"/>
+		<property name="deciduos_75" type="boolean" column="deciduos_75"/>
+		<property name="deciduos_74" type="boolean" column="deciduos_74"/>
+		<property name="deciduos_73" type="boolean" column="deciduos_73"/>
+		<property name="deciduos_72" type="boolean" column="deciduos_72"/>
+		<property name="deciduos_71" type="boolean" column="deciduos_71"/>
+		<property name="deciduos_85" type="boolean" column="deciduos_85"/>
+		<property name="deciduos_84" type="boolean" column="deciduos_84"/>
+		<property name="deciduos_83" type="boolean" column="deciduos_83"/>
+		<property name="deciduos_82" type="boolean" column="deciduos_82"/>
+		<property name="deciduos_81" type="boolean" column="deciduos_81"/>
+		<property name="dmft" type="float" column="dmft"/>
+		<property name="treatSumExtraction" type="int" column="treatSumExtraction"/>
+		<property name="treatSumFilling" type="int" column="treatSumFilling"/>
+		<property name="treatSumRTC" type="int" column="treatSumRTC"/>
+	</class>
+</hibernate-mapping>

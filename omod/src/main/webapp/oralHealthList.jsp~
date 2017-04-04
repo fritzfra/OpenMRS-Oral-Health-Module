@@ -1,0 +1,40 @@
+<%@ include file="/WEB-INF/template/include.jsp"%>
+<%@ include file="/WEB-INF/template/header.jsp"%>
+
+<%@ include file="template/localHeader.jsp"%>
+<openmrs:htmlInclude file="/moduleResources/oralhealthmodule/delete_icon.gif"/>
+<openmrs:htmlInclude file="/moduleResources/oralhealthmodule/edit_icon.png"/>
+
+<a href="addOralHealth.form"><spring:message code="general.add"/></a>
+<br /><br />
+
+<div class="boxHeader">
+	<b><spring:message code="oralhealthmodule.listheader"/></b>
+</div>
+<div class="box">
+	<table cellpadding="2" cellspacing="0" id="oralHealth" width="98%">
+		<tr>
+			<th> <spring:message code="oralhealthmodule.oralHealthId"/> </th>
+			<th> <spring:message code="oralhealthmodule.patientName"/> </th>
+			<th> <spring:message code="oralhealthmodule.doctorName"/> </th>
+			<th> <spring:message code="oralhealthmodule.examinationDate"/> </th>
+			<th> <spring:message code="general.action"/> </th>
+		</tr>
+		<c:forEach var="assessment" items="${assessments}" varStatus="status">
+			<tr class='${status.index % 2 == 0 ? "evenRow" : "oddRow"}'>
+	<td valign="top" style="white-space: nowrap"><a href="addOralHealth.form?id=${assessment.oralHealthId}">${assessment.oralHealthId}</a></td>
+				<td valign="top">${assessment.patientName}</td>
+				<td valign="top">${assessment.doctorName}</td>
+				<td valign="top">${assessment.examinationDate}</td>
+	<td valign="top" style="white-space: nowrap"><a href="addOralHealth.form?id=${assessment.oralHealthId}"><img src="${pageContext.request.contextPath}/moduleResources/oralhealthmodule/edit_icon.png"></a><a href="deleteOralHealth.form?id=${assessment.oralHealthId}"><img src="${pageContext.request.contextPath}/moduleResources/oralhealthmodule/delete_icon.gif"><td valign="top" style="white-space: nowrap"></a></td>
+			</tr>
+		</c:forEach>
+	</table>
+</div>
+
+<br/>
+
+<%@ include file="/WEB-INF/template/footer.jsp"%>
+
+
+

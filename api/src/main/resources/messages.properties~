@@ -1,0 +1,9 @@
+${project.parent.artifactId}.title=Oral Health Module
+${project.parent.artifactId}.manage=Module Information
+${project.parent.artifactId}.addOralHealth=Oral Health Assessment
+${project.parent.artifactId}.oralHealthList=List of Oral Health Assessments
+${project.parent.artifactId}.oralHealthId=ID
+${project.parent.artifactId}.patientName=Patient name
+${project.parent.artifactId}.doctorName=Name of doctor
+${project.parent.artifactId}.examinationDate=Examination Date
+${project.parent.artifactId}.listheader=Oral Health Assessments

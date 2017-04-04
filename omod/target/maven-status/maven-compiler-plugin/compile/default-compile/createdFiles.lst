@@ -1,0 +1,4 @@
+org/openmrs/module/oralhealthmodule/web/controller/OralHealthTabController.class
+org/openmrs/module/oralhealthmodule/extension/html/AdminList.class
+org/openmrs/module/oralhealthmodule/extension/html/OralHealthTab.class
+org/openmrs/module/oralhealthmodule/web/controller/OralHealthManageController.class

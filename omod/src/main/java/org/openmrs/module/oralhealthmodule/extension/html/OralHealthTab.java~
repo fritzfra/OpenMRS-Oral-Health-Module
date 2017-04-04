@@ -1,0 +1,61 @@
+package org.openmrs.module.oralhealthmodule.web.extension.html;
+import org.openmrs.module.Extension;
+
+import org.openmrs.module.web.extension.PatientDashboardTabExt;
+
+public class XXXTab extends PatientDashboardTabExt {
+/**
+* @see org. openmrs . module .web. extension . PatientDashboardTabExt #
+*/
+
+public Extension . MEDIA_TYPE getMediaType () {
+ return Extension . MEDIA_TYPE . html ;
+}
+
+ @Override
+
+ public String getPortletUrl () {
+
+ return " XXXTab ";
+
+ }
+
+ /**
+
+ * @see org. openmrs . module .web. extension . PatientDashboardTabExt # getTabId ()
+
+ */
+
+ @Override
+
+ public String getTabId () {
+
+ return "ID des Tab ( meist Name ohne Leerzeichen )";
+
+ }
+
+ /**
+
+ * @see org. openmrs . module .web. extension . PatientDashboardTabExt # getTabName
+
+ */
+
+ @Override
+
+ public String getTabName () {
+
+ return " name des Tab";
+
+ }
+
+getPortletUrl ()
+
+()
+
+ public String getRequiredPrivilege () {
+
+ return "";
+
+ }
+
+ }
